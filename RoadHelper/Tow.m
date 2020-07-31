@@ -1,19 +1,18 @@
 //
-//  AppDelegate.m
+//  Tow.m
 //  RoadHelper
 //
-//  Created by Terrell-Jude Ilechie on 7/17/20.
+//  Created by Terrell-Jude Ilechie on 7/31/20.
 //  Copyright © 2020 Terrell-Jude Ilechie. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "Tow.h"
 #import "Parse/Parse.h"
 @interface AppDelegate ()
 
 @end
 
-@implementation AppDelegate
-
+@implementation Tow
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -26,11 +25,10 @@
     
              
          [Parse initializeWithConfiguration:config];
-    PFObject *gasStations = [PFObject objectWithClassName:@"gasStation"];
-    gasStations[@"grade"] = @89;
-    gasStations[@"price"] = @"$2.00";
-    gasStations[@"cheatMode"] = @NO;
-    [gasStations saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+    PFObject *Tow = [PFObject objectWithClassName:@"Tow"];
+    Tow[@"price"] = @"$250";
+    Tow[@"cheatMode"] = @NO;
+    [Tow saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
       if (succeeded) {
          NSLog(@"Object saved!");
       } else {
@@ -39,7 +37,6 @@
     }];
     return YES;
 }
-
 
 #pragma mark - UISceneSession lifecycle
 
@@ -59,3 +56,4 @@
 
 
 @end
+
