@@ -62,7 +62,7 @@ NSURL *url = [NSURL URLWithString:@"https://maps.googleapis.com/maps/api/place/n
 
 - (UITableViewCell *)tableView:(UITableView *) tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     
- }
+}
 
 
 @end
