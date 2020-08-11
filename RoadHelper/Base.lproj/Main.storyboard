@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -406,7 +406,7 @@
         <!--View Controller-->
         <scene sceneID="bSF-C5-e2B">
             <objects>
-                <viewController id="eBJ-Di-vJl" sceneMemberID="viewController">
+                <viewController id="eBJ-Di-vJl" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="37S-mp-NXw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -421,18 +421,15 @@
                         <viewLayoutGuide key="safeArea" id="7xg-Sw-g5G"/>
                     </view>
                     <navigationItem key="navigationItem" id="QD8-iz-rPL"/>
+                    <connections>
+                        <outlet property="tableView" destination="4SE-9Z-8NO" id="cUJ-zP-pLC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3VI-RL-8bJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2247.826086956522" y="1045.9821428571429"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="jQ2-f0-2bO"/>
-        <segue reference="ezD-XC-kHR"/>
-        <segue reference="qXj-qj-Gby"/>
-        <segue reference="S0A-jj-V2P"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="5aa007aa5cc410b6048b4599-1334-667-1030x515" width="1030" height="515"/>
         <image name="61k14LGViOL._AC_SX425_" width="425" height="426"/>
@@ -440,4 +437,10 @@
         <image name="depositphotos_117380834-stock-photo-woman-with-broken-down-car" width="1023" height="682"/>
         <image name="veered" width="424" height="283"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="jQ2-f0-2bO"/>
+        <segue reference="ezD-XC-kHR"/>
+        <segue reference="qXj-qj-Gby"/>
+        <segue reference="S0A-jj-V2P"/>
+    </inferredMetricsTieBreakers>
 </document>
